@@ -1,0 +1,312 @@
+/* ---- IMPORTANDO AS FONTES DIRETAMENTE DOS ARQUIVOS */
+/* Fonte Logo HANDEL */
+@font-face {
+    font-family: 'Handel Gothic Std Regular';
+    src: url('/fonts/handel-gothic.otf') format('opentype');
+}
+/* FONTE PALAVRAS LOGO */
+@font-face {
+    font-family: 'Kentledge Medium Italic';
+    src: url('fonts/kentledge-medium-italic.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Mundial Light Italic';
+    src: url('fonts/mundial-light-italic.otf') format('opentype');
+}
+/* Fonte regular */
+@font-face {
+    font-family: 'Averta';
+    src: url('fonts/Averta.otf') format('opentype');
+}
+/* Fonte Bold */
+@font-face {
+    font-family: 'AvertaBold';
+    src: url('fonts/Averta\ Bold.otf') format('opentype');
+    font-weight: bold;
+}
+/* SemiBold */
+@font-face {
+    font-family: 'AvertaSemiBold';
+    src: url('/fonts/Averta\ Semibold.otf') format('opentype');
+}
+/* SEMIBOLD ITALIC */
+@font-face {
+    font-family: 'AvertaSemiBoldItalic';
+    src: url('/fonts/Averta\ Semibold\ Italic.otf') format('opentype');
+}
+/* averta RegularItalic */
+@font-face {
+    font-family: 'AvertaRegularItalic';
+    src: url('/fonts/Averta\ Regular\ Italic.otf') format('opentype');
+
+}
+/* averta BlackItalic */
+@font-face {
+    font-family: 'AvertaBlackItalic';
+    src: url('/fonts/Averta\ Black\ Italic.otf') format('opentype');
+
+}
+/* Bold Italico */
+@font-face {
+    font-family: 'AvertaBoldItalic';
+    src: url('/fonts/Averta\ Bold\ Italic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+/* Tirando a margin e padding padrão dos navegadores */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #aa1c1a;
+    height: auto;
+}
+.conteudo {
+    height: auto;
+    overflow: hidden;
+}
+/* --- Definindo as cores e fontes que serão utilizadas --*/
+:root {
+    --preto: #000000;
+    --branco: #ffffff;
+    --vermelho-principal: #b22824;
+    --vermelho-secundario: #aa1b1a;
+    --vermelho-footer: #502420;
+    --fonte-Handel: 'Handel Gothic Std Regular', sans-serif;
+    --fonte-Averta: 'Averta', sans-serif;
+    --fonte-AvertaBold: 'AvertaBold', sans-serif;
+    --fonte-AvertaBoldItalic: 'AvertaBoldItalic', sans-serif;
+}
+header {
+    background-color: var(--vermelho-secundario);
+}
+.cabecalho_logo {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+}
+.cabecalho_logo p {
+    color: var(--branco);
+    font-family: 'Handel Gothic Std Regular';
+    font-size: 36px;
+}
+/* ---- BANNER DAS MATRICULAS E BOTÃO DE ENTREVISTA */
+.banner_inicio img{
+    width: 100%;
+    display: block;
+}
+.banner_matricula {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1.62rem;
+}
+.banner_primario {
+    padding-top: 0;
+}
+.matricula_informacao h3 {
+    font-family: 'AvertaBlackItalic';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0;
+    color: var(--branco);
+    line-height: 0.8;
+}
+.matricula_informacao h4 {
+    font-family: 'AvertaBlackItalic';
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.8;
+    color: var(--branco);
+}
+.matricula_informacao p {
+    font-family: 'AvertaRegularItalic';
+    font-size: 0.75rem;
+    font-style: normal;
+    padding: 0;
+    color: var(--branco);
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+.matricula_botao {
+    padding-top: 15px;
+}
+.matricula_botao_ultimo {
+    padding-bottom: 1.5rem;
+    padding-top: 1em;
+}
+/* --- banner dos links com contatos */
+.contatos_ancoras {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.4rem;
+}
+.ancora_telefone a {
+    display: flex;
+    column-gap: .37rem;
+    justify-content: center;
+}
+a:any-link {
+    text-decoration: none;
+}
+.ancora_telefone p {
+    color: var(--branco);
+    font-family: var(--fonte-AvertaBoldItalic);
+    font-size: 0.675rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.ancora_telefone img {
+    justify-content: center;
+    padding-top: 2px;
+}
+.localizacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .37rem;
+}
+.localizacao p {
+    font-family: var(--fonte-AvertaBoldItalic);
+    color: var(--branco);
+    font-size: .675rem;
+}
+/* SEGUNDA LOGO COM NOME */
+.cabecalho_logo_dois {
+    display: flex;
+    padding: 36px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+}
+.cabecalho_logo_tres {
+    display: flex;
+    padding:  36px 42px 0 42px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+}
+.cabecalho_logo_dois p,
+.cabecalho_logo_tres p{
+    color: var(--branco);
+    font-family: 'Handel Gothic Std Regular';
+    font-size: 36px;
+}
+.cabecalho_logo_dois img,
+.cabecalho_logo_tres img {
+    max-width: 2.5rem;
+}
+/* --------- BANNER VIDEO INSTITUCIONAL ------ */
+.banner_video {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.banner_video iframe {
+    width: 100vw;
+}
+.banner_video p {
+    color: var(--branco);
+    font-family: var(--fonte-AvertaBold);
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.video_institucional {
+    width: 100vw;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+
+}
+/*  CONTAINER VANTAGENS  */
+.container_vantagens {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem .6rem;
+}
+.container_vantagens h6 {
+    color: var(--branco);
+    font-family: 'AvertaSemiBoldItalic';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+    text-align: center;
+    padding-top: .75rem;
+}
+.vantagem_um,
+.vantagem_dois,
+.vantagem_tres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.125rem;
+    border: 1px solid #FFF;
+    background: rgba(217, 217, 217, 0.44);
+    width: 9rem;
+    height: 6.1875rem;
+    /* flex-shrink: 0; */
+}
+.container_vatagens_secundario {
+    display: flex;
+    justify-content: center;
+}
+.container_vatagens_secundario h6 {
+    color: var(--branco);
+    font-family: 'AvertaSemiBoldItalic';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+    text-align: center;
+    padding-top: .75rem;
+}
+
+/* --------- PRIMEIRO VIDEO PROVA SOCIAL*/
+.prova_social {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    padding-top: 1rem;
+    
+    align-items: center;
+}
+
+.prova_social img {
+    width: 4.75rem;
+    height: 5.3125rem;
+    flex-shrink: 0;
+    padding-bottom: 1rem;
+}
+
+.prova_social video {
+    width: 14rem;
+    
+    flex-shrink: 0;
+}
+
+/* FOOTER */
+.footer_contatos {
+    background-color: var(--vermelho-footer);
+}
+.footer_localizacao {
+    padding-bottom: 16px;
+}
+.copyright{
+    font-family: 'AvertaSemiBoldItalic';
+    font-size: 0.500rem;
+    color: var(--branco);
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+}
+/* ----- MÉDIA QUERIES ----------------- */
